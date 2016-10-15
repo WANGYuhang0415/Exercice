@@ -1,1 +1,17 @@
-git checkout vaissellegit rebase master/*régler les conflits*/git add chap1.adocgit rebase --continuegit rebase --skipgit log --onelinegit checkout mastergit merge vaissellegit branch -d vaissellegit checkout mastergit log --onelinegit rebase -i e6772ab /*le commit d'intro est e6772ab*//*choisir 'd' pour supprimer le commit de correction de l’intro*/git log --onelinegit rebase -i 4291f89 /*reformuler le message d'autre commit 4291f89*//*choisir 'r' pour le reformuler*/
+git checkout vaisselle
+git rebase master
+/*régler les conflits*/
+git add chap1.adoc
+git rebase --continue
+git rebase --skipgit 
+log --onelinegit 
+checkout master
+git merge vaisselle
+git branch -d vaisselle
+git checkout master
+git log --oneline
+git rebase -i e6772ab /*le commit d'intro est e6772ab*/
+/*choisir 'd' pour supprimer le commit de correction de l’intro*/
+git log --oneline
+git rebase -i 4291f89 /*reformuler le message d'autre commit 4291f89*/
+/*choisir 'r' pour le reformuler*/
