@@ -3,9 +3,9 @@ git rebase master
 /*régler les conflits*/
 git add chap1.adoc
 git rebase --continue
-git rebase --skipgit 
-log --onelinegit 
-checkout master
+git rebase --skip
+git log --oneline
+git checkout master
 git merge vaisselle
 git branch -d vaisselle
 git checkout master
